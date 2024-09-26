@@ -165,7 +165,6 @@ void searchDatabase(vector<Media*> &database) {
 	(*it)->print();
       }
     }
-    cout << "Not found!" << endl;
   }
   else if (strcmp(searchInput, "YEAR") == 0) {
     // Same process as search by title, but for year
@@ -179,7 +178,6 @@ void searchDatabase(vector<Media*> &database) {
 	cout << '\n';
       }
     }
-    cout << "Not found!" << endl;
   }
   else {
     cout << "Please enter a valid input..." << endl;
