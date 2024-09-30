@@ -33,3 +33,7 @@ float Movies::getRating() {
 void Movies::print() {
   cout << title << ", " << year << ", " << duration << " minutes, directed by " << director << ", " << setprecision(3) << rating << endl;   
 }
+void Movies::deleteTitle() {
+  delete title;
+  delete director;
+}

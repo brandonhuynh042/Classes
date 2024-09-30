@@ -14,6 +14,7 @@ class VideoGame : public Media {
   float getRating();
   char* getPublisher();
   void print();
+  void deleteTitle();
  protected:
   float rating;
   char* publisher;

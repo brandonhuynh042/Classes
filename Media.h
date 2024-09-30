@@ -13,6 +13,7 @@ class Media {
   char* getTitle();
   int getYear();
   virtual void print();
+  virtual void deleteTitle();
  protected:
   char* title;
   int year;

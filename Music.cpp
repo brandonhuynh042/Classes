@@ -34,6 +34,10 @@ void Music::print() {
   cout << title << ", " << year << ", " << artist << ", " << "duration of " << duration << " minutes, \n published by " << publisher << endl;
 }
 
-
+void Music::deleteTitle() {
+  delete title;
+  delete publisher;
+  delete artist; 
+}
 
 

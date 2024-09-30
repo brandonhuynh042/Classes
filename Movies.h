@@ -16,6 +16,7 @@ class Movies : public Media {
   int getDuration();
   float getRating();
   void print();
+  void deleteTitle();
  protected:
   char* director;
   int duration;

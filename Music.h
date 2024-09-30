@@ -16,6 +16,7 @@ class Music : public Media {
   int getDuration();
   char* getPublisher();
   void print();
+  void deleteTitle();
  protected:
   char* artist;
   int duration;

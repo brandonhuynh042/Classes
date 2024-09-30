@@ -206,6 +206,7 @@ void deleteMedia(vector<Media*> &database) {
 	cin.get(deleteInput, 4);
 	// If so, delete it and free the memory
 	if (strcmp(deleteInput, "YES") == 0) {
+	  (*it)->deleteTitle();
 	  database.erase(it);
 	  delete *it;
 	  cout << "Deleted!" << endl;
@@ -232,6 +233,7 @@ void deleteMedia(vector<Media*> &database) {
         cin.ignore(16, '\n');
         cin.get(deleteInput, 4);
         if (strcmp(deleteInput, "YES") == 0) {
+	  (*it)->deleteTitle();
           database.erase(it);
           delete *it;
           cout << "Deleted!" << endl;

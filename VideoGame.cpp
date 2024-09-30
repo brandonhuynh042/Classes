@@ -28,3 +28,7 @@ void VideoGame::print() {
   cout << title << ", " << year << ", " << publisher << ", rating of " << setprecision(3) << rating << endl;
 }
 
+void VideoGame::deleteTitle() {
+  delete title;
+  delete publisher;
+}

@@ -26,3 +26,7 @@ char* Media::getTitle() {
 void Media::print() {
   cout << title << ", " << year << endl;
 }
+
+void Media::deleteTitle() {
+  delete title;
+}
